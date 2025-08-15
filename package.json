@@ -1,0 +1,9 @@
+{
+  "name": "php-practice",
+  "version": "0.1.0",
+  "description": "PHP practice",
+  "author": "Lee-Dongwook",
+  "license": "NON GPL",
+  "main": "blocks/index.js",
+  "scripts": {}
+}
