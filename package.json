@@ -1,9 +1,27 @@
 {
   "name": "php-practice",
   "version": "0.1.0",
-  "description": "PHP practice",
+  "description": "PHP practice WordPress plugin",
   "author": "Lee-Dongwook",
-  "license": "NON GPL",
+  "license": "GPL-2.0-or-later",
   "main": "blocks/index.js",
-  "scripts": {}
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:php": "phpcs --standard=WordPress",
+    "packages-update": "wp-scripts packages-update"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.19.0",
+    "mini-css-extract-plugin": "^2.7.6"
+  },
+  "dependencies": {
+    "@wordpress/blocks": "^12.28.0",
+    "@wordpress/components": "^25.13.0",
+    "@wordpress/element": "^5.28.0",
+    "@wordpress/i18n": "^4.47.0"
+  }
 }

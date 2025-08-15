@@ -1,11 +1,13 @@
 const defaultConfig = require("@wordpress/scripts/config/webpack.config");
-
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   ...defaultConfig,
   mode: "development",
   devtool: false,
+  entry: {
+    blocks: './src/blocks.js',
+  },
   module: {
     rules: [
       {
@@ -28,4 +30,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    ...defaultConfig.plugins,
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
+  ],
 };

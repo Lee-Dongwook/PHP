@@ -1,0 +1,33 @@
+/**
+ * Block Styles
+ */
+
+.wp-block-php-practice-hello-world {
+    padding: 20px;
+    background: #f8f9fa;
+    border: 2px solid #007cba;
+    border-radius: 8px;
+    text-align: center;
+    
+    p {
+        margin: 0;
+        font-size: 18px;
+        color: #333;
+        font-weight: 500;
+    }
+    
+    &:hover {
+        background: #e9ecef;
+        border-color: #005a87;
+    }
+}
+
+/**
+ * Editor specific styles
+ */
+.editor-styles-wrapper {
+    .wp-block-php-practice-hello-world {
+        background: #f0f6fc;
+        border-color: #007cba;
+    }
+}
